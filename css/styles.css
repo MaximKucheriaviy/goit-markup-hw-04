@@ -6,6 +6,7 @@
   --font-gray: #757575;
   --background-black: #2f303a;
   --background-gray: #f5f4fa;
+  --title-background: #c4c4c4;
 }
 
 * {
@@ -147,10 +148,26 @@ body ul {
 
 /*стили index main*/
 .title {
+  text-align: center;
   background-color: var(--background-black);
+}
+
+.bg-image {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
+  margin: 0px auto;
+
+  background-color: var(--title-background);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title h1 {
@@ -170,10 +187,7 @@ body ul {
 
 .title button {
   /* display: inline-block; */
-  background-color: var(--font-blue);
-  border: 1px solid transparent;
   padding: 10px 23px;
-  border-radius: 4px;
   min-width: 200px;
 
   font-family: inherit;
@@ -182,7 +196,13 @@ body ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  background-color: var(--font-blue);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 .title button:hover,
 .title button:focus {
   background-color: #188ce8;

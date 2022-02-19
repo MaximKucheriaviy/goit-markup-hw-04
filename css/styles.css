@@ -134,7 +134,8 @@ body ul {
 }
 
 .header-contacts a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -146,6 +147,13 @@ body ul {
   text-decoration: none;
 }
 
+.icon-envelope {
+  margin-right: 10px;
+  fill: var(--font-gray);
+}
+.link:hover .icon-envelope {
+  fill: var(--font-blue);
+}
 /*стили index main*/
 .title {
   max-width: 1600px;
@@ -216,6 +224,13 @@ body ul {
 
 .peculiarities-list .item + .item {
   margin-left: 30px;
+}
+
+.peculiarities-container {
+  background-color: var(--background-gray);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .peculiarities-title {

@@ -136,7 +136,7 @@ body ul {
 }
 
 .header-contacts a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -427,8 +427,6 @@ body ul {
   column-gap: 10px;
 }
 .footer-icons-list .item {
-  padding: 12px 12px;
-
   line-height: 0px;
 
   fill: var(--font-white);
@@ -438,6 +436,10 @@ body ul {
 .footer-icons-list .item:hover,
 .footer-icons-list .item:focus {
   background-color: var(--font-blue);
+}
+.footer-icon-link {
+  display: block;
+  padding: 12px 12px;
 }
 
 /* стили portfolio main */

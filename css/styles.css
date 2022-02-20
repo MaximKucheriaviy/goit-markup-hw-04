@@ -7,6 +7,7 @@
   --background-black: #2f303a;
   --background-gray: #f5f4fa;
   --title-background: #c4c4c4;
+  --icons-greay: rgba(175, 177, 184, 1);
 }
 
 * {
@@ -295,6 +296,8 @@ body ul {
 .team-container {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team-list .item + .item {
   margin-left: 30px;
@@ -310,10 +313,31 @@ body ul {
 }
 
 .card-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--font-gray);
+}
+.team-links {
+  display: flex;
+  column-gap: 10px;
+}
+.team-links-item {
+  border-radius: 50%;
+  fill: var(--icons-greay);
+}
+
+.team-links-item:hover,
+.team-links-item:focus {
+  fill: var(--font-white);
+  background-color: var(--font-blue);
+}
+.team-link {
+  padding: 12px;
+  display: block;
+  line-height: 0;
 }
 
 /* стили футера */

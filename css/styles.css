@@ -8,6 +8,7 @@
   --background-gray: #f5f4fa;
   --title-background: #c4c4c4;
   --icons-greay: rgba(175, 177, 184, 1);
+  --icons-transpered: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -368,12 +369,16 @@ body ul {
 }
 /* стили футера */
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--background-black);
 }
-
+.footer .container {
+  display: flex;
+}
+.address-box {
+  padding-top: 60px;
+}
 .footer .logo {
   color: var(--font-white);
 }
@@ -403,6 +408,36 @@ body ul {
 .link:hover,
 .link:focus {
   color: var(--font-blue);
+}
+
+.icons-box {
+  margin-left: 70px;
+  padding-top: 72px;
+}
+.footer-icons-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--font-white);
+}
+.footer-icons-list {
+  display: flex;
+  column-gap: 10px;
+}
+.footer-icons-list .item {
+  padding: 12px 12px;
+
+  line-height: 0px;
+
+  fill: var(--font-white);
+  background-color: var(--icons-transpered);
+  border-radius: 50%;
+}
+.footer-icons-list .item:hover,
+.footer-icons-list .item:focus {
+  background-color: var(--font-blue);
 }
 
 /* стили portfolio main */
